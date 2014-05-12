@@ -1,0 +1,26 @@
+{{#modal-dialog action="close"}}
+  <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Commandez avec votre compte <span style="color:orange;">Orange Money</span></h4>
+  </div>
+  <!--div class="modal-body" {{action bubbles=false preventDefault=false}}>
+    <label for="exampleInputEmail1">1. Entrez votre numéro</label>
+    <input type="text" class="form-control" placeholder="Numéro de téléphone" name="phone" disabled>
+    <span class="help-block">Votre numéro est <strong>indispensable</strong> pour que nous puissions valider votre achat et vous contactez.</span>
+  </div>
+  <div class="modal-body" {{action bubbles=false preventDefault=false}}>
+    <label for="exampleInputEmail1">2. Effectuez votre paiment au <a href="tel:77896523">77999999</a></label>
+    <p>Dès la réception de votre paiement nous vous confirmerons votre commande par <strong>texto</strong>.</p>  
+  </div-->
+
+  <div class="modal-body" {{action bubbles=false preventDefault=false}}>    
+    <label for="exampleInputEmail1"><h2>Nous lançons ce service prochainement!</h2></label>
+    <input type="text" id="prospect_email" class="form-control" placeholder="Renseignez votre email" name="prospect_email">
+    <span class="help-block">En attendant, renseignez votre email... Nous vous contactons dès que le service est lancé</span>
+  </div>
+
+  <div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal" {{action "close"}}>Quittez</button>
+    <button type="button" class="btn btn-primary" {{action "send"}}>Validez</button>
+  </div>
+{{/modal-dialog}}

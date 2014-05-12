@@ -6,6 +6,8 @@ Cafeblons.Store = DS.Store.extend({
 })
 
 
-Cafeblons.ApplicationAdapter = DS.RESTAdapter.extend({
+# Cafeblons.ApplicationAdapter = DS.RESTAdapter.extend({
 
-})
+# })
+
+Cafeblons.ApplicationAdapter = DS.FixtureAdapter.extend();

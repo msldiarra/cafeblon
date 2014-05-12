@@ -8,4 +8,5 @@
 // for more details see: http://emberjs.com/guides/application/
 Cafeblons = Ember.Application.create();
 
+// Cafeblons.ApplicationAdapter = DS.FixtureAdapter.extend();
 

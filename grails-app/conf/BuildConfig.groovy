@@ -65,12 +65,15 @@ grails.project.dependency.resolution = {
         compile ":mongodb:2.0.1"
         compile ":ember-asset-pipeline:1.4.0.2"
         compile ":coffee-asset-pipeline:1.5.0"
+        compile ":font-awesome-resources:4.0.3.0"
+        compile ":mail:1.0.5"
 
         // plugins needed at runtime but not for compilation
         //runtime ":hibernate:3.6.10.9" // or ":hibernate4:4.3.4"
         //runtime ":database-migration:1.3.8"
         runtime ":jquery:1.11.0.2"
         runtime ":resources:1.2.7"
+        runtime ':twitter-bootstrap:3.0.3'
         runtime ':twitter-bootstrap:3.0.3'
         // Uncomment these (or add new ones) to enable additional resources capabilities
         //runtime ":zipped-resources:1.0.1"
