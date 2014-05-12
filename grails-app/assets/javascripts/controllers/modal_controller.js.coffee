@@ -5,7 +5,7 @@ Cafeblons.ModalController = Ember.ObjectController.extend
 			return this.send 'closeModal'
 
 		send: () -> 
-			jQuery.post "/cafeblons/mail/send/",  
+			jQuery.post "/mail/send/",  
 				prospect_email: jQuery("#prospect_email").val(), 
 				() -> 
 					jQuery( "#success" ).html("")

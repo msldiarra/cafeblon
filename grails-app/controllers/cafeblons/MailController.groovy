@@ -13,8 +13,6 @@ class MailController {
 		   body 'Prospect email : ' + params.prospect_email
 		}
 
-		log.error "sending email..."
-
 		render ""
     }
 }
