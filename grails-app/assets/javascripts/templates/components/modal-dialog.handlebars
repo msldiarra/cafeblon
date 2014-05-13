@@ -1,6 +1,6 @@
 <div class="modal">
 	<div class="modal-dialog" {{action "close"}}>	
-		<div class="modal-content">
+		<div class="modal-content" {{action preventDefault=false bubbles=false}}>
 	        {{yield}}
 	    </div>
 	</div>
