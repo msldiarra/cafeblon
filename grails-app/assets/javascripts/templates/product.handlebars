@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="col-xs-12 col-md-6">
+   		<span class="lead">{{aroma}}</span>
+   		<br/>
+    	<img  {{bind-attr src=bigImageUrl}} alt="{{bigImageUrl}}" />
+   		<br/>
+   		<span> {{price}} FCFA</span>
+   		<br/>
+   		{{view Ember.Select content=quantity selectionBinding='count'}}
+   		<button class="btn btn-primary btn-custom" {{action "addToBasket"}}>
+    		<i class="fa fa-coffee fa-lg fa-inverse"></i> Ajouter au panier
+    	</button> 
+   	</div>
+</div>

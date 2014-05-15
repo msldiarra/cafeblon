@@ -31,3 +31,5 @@ html, body {
 .modal {
    display: block !important;
  }
+
+ .table tr {border: none!important;}
