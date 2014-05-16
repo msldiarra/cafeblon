@@ -1,14 +1,15 @@
-<div class="row">
-    <div class="col-xs-12 col-md-6">
-   		<span class="lead">{{aroma}}</span>
-   		<br/>
-    	<img  {{bind-attr src=bigImageUrl}} alt="{{bigImageUrl}}" />
-   		<br/>
-   		<span> {{price}} FCFA</span>
-   		<br/>
-   		{{view Ember.Select content=quantity selectionBinding='count'}}
-   		<button class="btn btn-primary btn-custom" {{action "addToBasket"}}>
+<div class="center-block" style="width:90%;">
+	<br/>
+</div>	
+<div class="center-block" style="width:90%;">
+    <div>
+   		<div style="width:100%"><h1>{{aroma}}</span></div>
+    	<div style="width:100%"><img  class="resize" {{bind-attr src=bigImageUrl}} alt="{{bigImageUrl}}" /></div>
+   		<div style="width:100%"><span class="wake-me-up"> {{price}} FCFA</span></div>
+   		<div style="width:100%">{{view Ember.Select content=quantity selectionBinding='count'}}
+   		<button class="btn btn-primary btn-custom wheres-the-coffee" {{action "addToBasket"}}>
     		<i class="fa fa-coffee fa-lg fa-inverse"></i> Ajouter au panier
     	</button> 
+    	</div>
    	</div>
 </div>

@@ -9,4 +9,3 @@ Cafeblons.ProductController = Ember.ObjectController.extend
 			
 			basket = this.store.getById('basket', 'fixture-0')
 			if product.get('count') > 0 then basket.get('products').pushObject(product)
-

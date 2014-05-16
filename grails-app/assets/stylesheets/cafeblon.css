@@ -16,7 +16,7 @@ html, body {
 }
 
 .btn-custom {
-  background-color: #4E3F30 !important;
+  /*background-color: #4E3F30 !important;*/
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.33);
   -webkit-font-smoothing: antialiased;
   border-color: #4E3F30 !important;
@@ -33,3 +33,24 @@ html, body {
  }
 
  .table tr {border: none!important;}
+
+ .center-block() {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-white {color: white;}
+.gray-darker { color : #222;} 
+.wake-me-up { color : #C43738;} 
+.wheres-the-coffee {background-color: #2A1310 !important;}
+.orange-juice-sun { background-color: #DE7A47 !important;}
+/*.gray-darker { background-color : lighten(#000, 20%); }*/
+/*@gray:         lighten(#000, 33.5%); // #555
+@gray-light:   lighten(#000, 60%);   // #999
+@gray-lighter: lighten(#000, 93.5%); // #eee*/
+
+img.resize{
+    width:300px; /* you can use % */
+    height: auto;
+}
