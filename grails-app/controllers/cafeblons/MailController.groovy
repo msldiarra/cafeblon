@@ -7,8 +7,8 @@ class MailController {
     def send(){
 
 		mailService.sendMail {
-		   to "msl.diarra@gmail.com"
-		   from "cafeblon@gmail.com"
+		   to "cafeblon@yahoo.com"
+		   from "cafeblon@yahoo.com"
 		   subject "[cafeblon] " + params.prospect_email + " insterested in Cafeblon"
 		   body 'Prospect email : ' + params.prospect_email
 		}

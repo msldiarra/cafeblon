@@ -65,6 +65,7 @@ grails {
 
 grails {
    mail {
+     from = "cafeblon@yahoo.com"
      host = "smtp.correo.yahoo.es"
      port = 465
      username = "cafeblon@yahoo.com"
