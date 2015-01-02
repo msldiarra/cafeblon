@@ -54,3 +54,5 @@ img.resize{
     width:300px; /* you can use % */
     height: auto;
 }
+
+.label {width:100%}
