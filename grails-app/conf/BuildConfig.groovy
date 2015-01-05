@@ -68,6 +68,9 @@ grails.project.dependency.resolution = {
         compile ":font-awesome-resources:4.0.3.0"
         compile ":mail:1.0.5"
 
+        compile ':heroku:1.0.1'
+        compile ':cloud-support:1.0.11'
+
         // plugins needed at runtime but not for compilation
         //runtime ":hibernate:3.6.10.9" // or ":hibernate4:4.3.4"
         //runtime ":database-migration:1.3.8"
