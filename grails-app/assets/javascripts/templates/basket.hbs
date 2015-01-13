@@ -25,10 +25,16 @@
 				        	<td><span class="pull-right">{{product.total}}</span></td>
 				    	</tr>
 				      {{/each}}
+                      {{#if basket.products}}
+                        <tr class="list-unstyled">
+                            <td class=""> + Frais de livraison</td>
+                            <td colspan="2"><span class="pull-right">1000</span></td>
+                        </tr>
+                      {{/if}}
 				    <tfoot>
 			    		<tr>
 			    			<td colspan="2">total</td>
-			    			<td><span class="pull-right">{{basket.total}}</span></td>
+			    			<td><span class="pull-right">{{basket.totalWithDelivery}}</span></td>
 			    		</tr>
 				    </tfoot>	
 			    </table>
