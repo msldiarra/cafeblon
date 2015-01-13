@@ -9,7 +9,7 @@ Cafeblons.ModalController = Ember.ObjectController.extend
       return this.send 'closeModal'
 
     send: () ->
-      total = this.get('total')
+      total = this.get('totalWithDelivery')
       products = new Array()
       products.push(product) for product in @get('products').get('content')
 

@@ -33,6 +33,10 @@
                 <td>${product.price}</td>
             </tr>
         </g:each>
+            <tr>
+                <td>+ Frais de livraison</td>
+                <td colspan="2" align="right">1000</td>
+            </tr>
     </tbody>
     </table>
 
