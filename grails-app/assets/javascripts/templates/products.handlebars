@@ -1,41 +1,80 @@
+<div class="navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <a class="navbar-brand" href="#">Caféblon</a>
+        <div class="pull-right" style="height: 50px; line-height: 50px; vertical-align: middle">
+            {{#link-to 'basket' classNames="text-white"}}
+                <i class="fa fa-shopping-cart"></i> Total: {{basket.total}} FCFA
+            {{/link-to}}
+        </div>
+    </div>
 
-<div class="center-block" style="width:90%;">
-	{{#link-to 'basket' classNames="btn text-white orange-juice-sun"}}
-		<i class="fa fa-shopping-cart"></i> Votre panier. Total: {{basket.total}} FCFA
-	{{/link-to}}
+    <!--div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="#about">Cafés</a></li>
+        <li><a href="#about">Qui sommes nous?</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
 </div>
-<div class="center-block" style="width:90%;">
+<div class="container">
+    <div class="page-header">
+    </div>
+<div class="row center-block">
 	<br/>
-</div>	
-<div class="center-block" style="width:90%;">
-    <ul class="list-unstyled">
+</div>
+<div class="row center-block" style="min-height: 690px;">
       {{#each itemController="product"}}
-      
-        <li class="spacer">
-        	<div class="row">
+
+      <div class="row col-xs-12 col-sm-6 col-md-4 col-lg-3 spacer center-block">
+          <div class="full">
+              <div class="row">
+                    <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 text-center">
+                        <img {{bind-attr src=imageUrl}} alt="{{imageUrl}}" />
+                    </div>
+                    <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                        <span class="lead gray-darker">{{aroma}}</span>
+                        <br/>
+                        <span class="">Description</span>
+                        <br/>
+                        <span class="wake-me-up"> {{price}} FCFA</span>
+                        {{view Ember.Select content=quantity selectionBinding='count'}}
+                    </div>
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center top-10">
+                          <button class="btn btn-primary btn-custom wheres-the-coffee" {{action "addToBasket"}}>
+                              <i class="fa fa-coffee fa-lg fa-inverse"></i> Ajouter au panier
+                          </button>
+                      </div>
+                </div>
+
+            </div>
+        </div>
+      {{/each}}
+</div>
+</div>
+
+{{!--
+
+<div class="row">
 	            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5">
-	            	{{!-- {{#link-to 'product' id}} --}}
-	            	<img  {{bind-attr src=imageUrl}} alt="{{imageUrl}}" />
-	           		<span class="lead gray-darker">{{aroma}}</span> <span class="wake-me-up"> {{price}} FCFA</span>
-	           		{{!-- {{/link-to}} --}}
-	            </div>
-	            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7">
-	           		{{view Ember.Select content=quantity selectionBinding='count'}}
-	           		<button class="btn btn-primary btn-custom wheres-the-coffee" {{action "addToBasket"}}>
-	            		<i class="fa fa-coffee fa-lg fa-inverse"></i> Ajouter au panier
-	            	</button> 
-	           	</div>
-	           	<!--div class="col-xs-6 col-md-4">
+<img  {{bind-attr src=imageUrl}} alt="{{imageUrl}}" />
+<span class="lead gray-darker">{{aroma}}</span> <span class="wake-me-up"> {{price}} FCFA</span>
+
+</div>
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-7">
+    {{view Ember.Select content=quantity selectionBinding='count'}}
+    <button class="btn btn-primary btn-custom wheres-the-coffee" {{action "addToBasket"}}>
+        <i class="fa fa-coffee fa-lg fa-inverse"></i> Ajouter au panier
+    </button>
+</div>
+<!--div class="col-xs-6 col-md-4">
 	           		{{view Ember.Select content=quantity selectionBinding='count'}}
 	           		<button class="btn btn-primary btn-custom" {{action "addToBasket"}}>
 	            		+ <i class="fa fa-coffee fa-lg fa-inverse"></i>
 	            	</button>
 	            </div-->
-	        </div>
-        </li>
-      {{/each}}
-    </ul>
 </div>
+--}}
+
 {{!-- <div class="row">
 	<div class="col-xs-12 col-md-12">
 			<div>
@@ -62,7 +101,7 @@
 			    			<td colspan="2">total</td>
 			    			<td><span class="pull-right">{{basket.total}}</span></td>
 			    		</tr>
-				    </tfoot>	
+				    </tfoot>
 			    </table>
 			</div>
 		    <div class="pull-right">

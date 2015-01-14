@@ -30,7 +30,7 @@
             <tr>
                 <td>${product.aroma}</td>
                 <td>${product.count}</td>
-                <td>${product.price}</td>
+                <td>${product.total}</td>
             </tr>
         </g:each>
             <tr>

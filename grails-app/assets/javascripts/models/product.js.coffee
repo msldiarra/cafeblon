@@ -16,6 +16,13 @@ Cafeblons.Product.FIXTURES = [
     {id:2,aroma:'Dharkan', imageUrl:'https://www.nespresso.com/ecom/medias/sys_master/public/9149719019550/C-0090_mediaQuickOrder.png', price:350, count:0, cru: 'intenso', bigImageUrl: 'images/kaazar.png'},
     {id:3,aroma:'Ristretto', imageUrl:'https://www.nespresso.com/ecom/medias/sys_master/public/8887596318750/CH_7615.20_mediaQuickOrder.png', price:350, count:0, cru: 'intenso' , bigImageUrl: 'images/kaazar.png'},
     {id:4,aroma:'Arpeggio', imageUrl:'https://www.nespresso.com/ecom/medias/sys_master/public/8887582294046/CH_7431.20_mediaQuickOrder.png', price:350, count:0, cru: 'intenso',  bigImageUrl: 'images/kaazar.png' },
-    {id:5,aroma:'Roma', imageUrl:'https://www.nespresso.com/ecom/medias/sys_master/public/8887597432862/CH_7439.20_mediaQuickOrder.png', price:350, count:0, cru: 'intenso',  bigImageUrl: 'images/kaazar.png' }
+    {id:5,aroma:'Arpeggio', imageUrl:'https://www.nespresso.com/ecom/medias/sys_master/public/8887582294046/CH_7431.20_mediaQuickOrder.png', price:350, count:0, cru: 'intenso',  bigImageUrl: 'images/kaazar.png' },
+    {id:6,aroma:'Arpeggio', imageUrl:'https://www.nespresso.com/ecom/medias/sys_master/public/8887582294046/CH_7431.20_mediaQuickOrder.png', price:350, count:0, cru: 'intenso',  bigImageUrl: 'images/kaazar.png' },
+    {id:7,aroma:'Arpeggio', imageUrl:'https://www.nespresso.com/ecom/medias/sys_master/public/8887582294046/CH_7431.20_mediaQuickOrder.png', price:350, count:0, cru: 'intenso',  bigImageUrl: 'images/kaazar.png' },
+    {id:8,aroma:'Roma', imageUrl:'https://www.nespresso.com/ecom/medias/sys_master/public/8887597432862/CH_7439.20_mediaQuickOrder.png', price:350, count:0, cru: 'intenso',  bigImageUrl: 'images/kaazar.png' },
+    {id:9,aroma:'Roma', imageUrl:'https://www.nespresso.com/ecom/medias/sys_master/public/8887597432862/CH_7439.20_mediaQuickOrder.png', price:350, count:0, cru: 'intenso',  bigImageUrl: 'images/kaazar.png' },
+    {id:10,aroma:'Roma', imageUrl:'https://www.nespresso.com/ecom/medias/sys_master/public/8887597432862/CH_7439.20_mediaQuickOrder.png', price:350, count:0, cru: 'intenso',  bigImageUrl: 'images/kaazar.png' },
+    {id:11,aroma:'Roma', imageUrl:'https://www.nespresso.com/ecom/medias/sys_master/public/8887597432862/CH_7439.20_mediaQuickOrder.png', price:350, count:0, cru: 'intenso',  bigImageUrl: 'images/kaazar.png' },
+    {id:12,aroma:'Roma', imageUrl:'https://www.nespresso.com/ecom/medias/sys_master/public/8887597432862/CH_7439.20_mediaQuickOrder.png', price:350, count:0, cru: 'intenso',  bigImageUrl: 'images/kaazar.png' },
 
 ]

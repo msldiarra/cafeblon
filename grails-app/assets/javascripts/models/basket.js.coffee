@@ -6,8 +6,10 @@ Cafeblons.Basket = DS.Model.extend
     	res += product.get('total') for product in @get('products').get('content')
     	return res ).property 'products.@each.count'
     totalWithDelivery: ( () ->
+      delivery = 0
+      if @get('products').get('content').get('count') > 0 then delivery = 1000
       res = 0
       res += product.get('total') for product in @get('products').get('content')
-      return res + 1000 ).property 'products.@each.count'
+      return res + delivery ).property 'products.@each.count'
     		
 

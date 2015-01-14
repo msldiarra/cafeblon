@@ -1,9 +1,28 @@
-<div class="center-block" style="width:90%;">
-	{{#link-to 'products' classNames="btn text-white orange-juice-sun"}}
-		<i class="fa fa-list-ul"></i> Retour à la liste des produits
-	{{/link-to}}
+<div class="navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <a class="navbar-brand" href="#">Caféblon</a>
+        <div class="pull-right" style="height: 50px; line-height: 50px; vertical-align: middle">
+            {{#link-to 'products' classNames="text-white"}}
+                <i class="fa fa-list-ul"></i> Retour à la liste des produits
+            {{/link-to}}
+        </div>
+    </div>
+
+    <!--div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="#about">Cafés</a></li>
+        <li><a href="#about">Qui sommes nous?</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
 </div>
-<div class="center-block row" style="width:90%;">
+<div class="container">
+    <div class="page-header">
+    </div>
+<div class="row center-block">
+    <br/>
+</div>
+<div class="center-block row" style="min-height: 690px;" >
 	<div class="col-xs-12 col-md-12">
 			<div>
 		    	<h4><span id="success" class="label label-success"></span></h4>
@@ -41,9 +60,10 @@
 			</div>
 		    <div class="pull-right">
 		    	{{#if basket.products}}
-		    	<button class="btn btn-primary" {{action 'openModal' 'modal' basket}}><i class="fa fa-shopping-cart"></i> Commander</button>
+		    	<button class="btn btn-primary btn-custom wheres-the-coffee" {{action 'openModal' 'modal' basket}}><i class="fa fa-shopping-cart"></i> Commander</button>
 		    	{{/if}}
 		    </div>
 		</div>
 	</div>
+</div>
 </div>
